@@ -189,7 +189,7 @@ main {
   .portfolio-item {
     flex: 1 1 100%;
     margin-bottom: 20px;
-    width: 90%;
+    width: 100%;
     max-width: 300px;
     position: relative;
   }
