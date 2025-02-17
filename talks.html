@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talks | Rebecca Zhang</title>
+  <!-- Import  Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to your main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Additional CSS specific to Talks page -->
+  <style>
+    /* Talks Section Container */
+    .talks-section {
+      max-width: 1200px;
+      margin: 120px auto 20px; /* Top margin accounts for fixed header */
+      padding: 0 20px;
+    }
+
+    /* Each talk item is a row with the video on the left and details on the right */
+    .talk-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    /* Talk video container */
+    .talk-video {
+      flex: 0 0 auto;
+      width: 560px; /* Adjust width as needed */
+      max-width: 100%;
+    }
+
+    .talk-video iframe {
+      width: 100%;
+      height: 315px;
+    }
+
+    /* Talk details container */
+    .talk-details {
+      flex: 1;
+    }
+
+    .talk-details h2 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .talk-details p {
+      font-size: 1.1rem;
+      margin: 10px 0 0;
+    }
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      .talk-item {
+        flex-direction: column;
+      }
+      .talk-video iframe {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header (Reuse your common header code) -->
+  <header>
+    <div class="header-container">
+      <!-- Site Title (Top Left) -->
+      <div class="site-title">
+        <a href="index.html">Rebecca<br>Zhang</a>
+        <span class="sub-title">feelings &amp; stories</span>
+      </div>
+
+     <!-- Navigation (Center) -->
+    <nav>
+      <ul class="nav-links">
+        <!--<li><a href="about.html">About</a></li> -->
+        <li><a href="prints.html">Prints</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="paintings.html">Paintings</a></li>
+      </ul>
+    </nav>
+
+      <!-- Social Media Links (Top Right) -->
+      <div class="social-links">
+        <a href="https://www.instagram.com/becca.zhang.art/" target="_blank">
+          <img src="images/icons8-instagram-32.png" alt="Instagram Logo" />
+        </a>
+        <a href="https://www.linkedin.com/in/rebeccayzhang/" target="_blank">
+          <img src="images/icons8-linkedin-50.png" alt="LinkedIn Logo" />
+        </a>
+      </div>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+
+  <main>
+    <section class="talks-section">
+
+
+      <!-- Talk Item 1 -->
+      <div class="talk-item">
+        <div class="talk-video">
+          <!-- Replace VIDEO_ID2 with your actual YouTube video ID -->
+          <iframe src="https://www.youtube.com/embed/XaM2_JmKmt8" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+        <div class="talk-details">
+          <h2>Culture clash, May 2024</h2>
+          <p> When I first heard what the theme of this month's storyslams were going to be, I thought of the classic adventure tales of young adults flinging themselves to a tropical Southeast Asian country and backpacking to find themselves. Although I sorely wish I had the wisdom to do something similar when I was 18 instead of diving off the deep end at an engineering university, I also thought back to what my first feeling of culture clash was. And for me, it was that feeling when you leave your family bubble and become more exposed to the "outside" world, and you realize your family's not as normal as you thought...</p>
+        </div>
+      </div>
+
+      <!-- Talk Item 3 -->
+      <div class="talk-item">
+        <div class="talk-video">
+          <!-- Replace VIDEO_ID1 with your actual YouTube video ID -->
+          <iframe src="https://www.youtube.com/embed/YeVp95JYZkM" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen> 
+          </iframe>
+        </div>
+        <div class="talk-details">
+          <h2>Epic Journey, September 2024</h2>
+          <p>I share about the 1-week roadtrip I took with my mother, driving through Switzerland, and how it opened my eyes to the person in front of me. </p>
+        </div>
+      </div>
+
+      <!-- Talk Item 3 -->
+      <div class="talk-item">
+        <div class="talk-video">
+          <!-- Replace VIDEO_ID1 with your actual YouTube video ID -->
+          <iframe src="https://www.youtube.com/embed/uKwIxurAW6g" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen> 
+          </iframe>
+        </div>
+        <div class="talk-details">
+          <h2>Against All Odds, November 2024</h2>
+          <p>I was so nervous for this one, because for the first time, my close friends were in the audience. It's so much easier to be naked and vulnerable in front of strangers than my own friends, who might add this to their compiled image of me, and think of this every time they see me from now onward. But at the same time, it felt wonderful to be seen by them, and to feel a little bit more understood by them.  </p>
+        </div>
+      </div>
+
+      <!-- Talk Item 3 -->
+      <div class="talk-item">
+        <div class="talk-video">
+          <!-- Replace VIDEO_ID1 with your actual YouTube video ID -->
+          <iframe src="https://www.youtube.com/embed/7Ly6RKsVsGo" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen> 
+          </iframe>
+        </div>
+        <div class="talk-details">
+          <h2>Magical Moments, January 2025</h2>
+          <p>I share about the roundabout journey that led to my brother getting his first tattoo.  </p>
+        </div>
+      </div>
+
+      <!-- Talk Item 2 -->
+      <div class="talk-item">
+        <div class="talk-video">
+          <!-- Replace VIDEO_ID1 with your actual YouTube video ID -->
+          <iframe src="https://www.youtube.com/embed/aXeVhTxqQiA" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen> 
+          </iframe>
+        </div>
+        <div class="talk-details">
+          <h2>Why not?, April 2024</h2>
+          <p>My first storyslam, ever! I had recently read The Moth's short story collection, and wondered if Zürich had its own storyteller group. Well, it did! And I showed up one rainy April evening without a clue as to how many people would be there and what kind of topics are usually discussed. And after the intermission break, I decided, why not, let's put my name in that hat!</p>
+        </div>
+      </div>
+
+      
+
+      <!-- Add more talk items as needed -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rebecca Zhang</p>
+  </footer>
+</body>
+</html>

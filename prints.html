@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prints | Rebecca Zhang</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Link to your main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Optional inline CSS specific to this page -->
+  <style>
+    /* Container for the visual art section */
+    .visual-art {
+      max-width: 1200px;
+      margin: 120px auto 20px; /* Top margin accounts for fixed header */
+      padding: 0 20px;
+    }
+
+    /* Each art item is a row with the image on the left and details on the right */
+    .art-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    /* Art photo container */
+    .art-photo {
+      flex: 0 0 auto;
+    }
+
+    .art-photo img {
+      width: 400px; /* Adjust width as needed */
+      height: auto;
+      object-fit: cover;
+    }
+
+    /* Art details container */
+    .art-details {
+      flex: 1;
+    }
+
+    .art-details h2 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .art-details p {
+      font-size: 1.1rem;
+      margin: 10px 0 0;
+    }
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      .art-item {
+        flex-direction: column;
+      }
+      .art-photo img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header: Reuse your existing header code (or Jekyll include) -->
+  <header>
+    <div class="header-container">
+      <!-- Site Title (Top Left) -->
+      <div class="site-title">
+        <a href="index.html">Rebecca<br>Zhang</a>
+        <span class="sub-title">feelings &amp; stories</span>
+      </div>
+
+    <!-- Navigation (Center) -->
+    <nav>
+      <ul class="nav-links">
+        <!--<li><a href="about.html">About</a></li> -->
+        <li><a href="prints.html">Prints</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="paintings.html">Paintings</a></li>
+      </ul>
+    </nav>
+
+      <!-- Social Media Links (Top Right) -->
+      <div class="social-links">
+        <a href="https://www.instagram.com/becca.zhang.art/" target="_blank">
+          <img src="images/icons8-instagram-32.png" alt="Instagram Logo" />
+        </a>
+        <a href="https://www.linkedin.com/in/rebeccayzhang/" target="_blank">
+          <img src="images/icons8-linkedin-50.png" alt="LinkedIn Logo" />
+        </a>
+      </div>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content area -->
+  <main>
+    <section class="visual-art">
+      <!-- Art Item 1 -->
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/plant_friends_final.png" alt="plant-friends">
+        </div>
+        <div class="art-details">
+          <h2>plant friends</h2>
+          <p>A sketch of the plant friends that kept me company in my home office during my work-from-home years.</p>
+        </div>
+      </div>
+
+      <!-- Art Item 2 -->
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/rise-n-shine_noborder.PNG" alt="rise-n-shine">
+        </div>
+        <div class="art-details">
+          <h2>rise n shine</h2>
+          <p>This is a piece I made when I ended my marriage, moved to Zürich, and moved into my very own apartment for the first time in 5 years. I wanted to add more color to my home 🌈 But most importantly, I wanted to remind myself of the power of my own agency, and the magic of new beginnings, and rising and shining and thriving in the moment 🙌 </p>
+        </div>
+      </div>
+
+      <!-- Art Item 3 -->
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/TM_shirt.png" alt="TM_shirt">
+        </div>
+        <div class="art-details">
+          <h2>züri</h2>
+          <p>Fun shirt design I made for my team at work 🙌 I wanted it to feel timeless and be something I would want to show off on the street. It was a collective design process, and our team added tons of easter eggs for our product and Züri :)</p>
+        </div>
+      </div>
+
+      <!-- Art Item 3 -->
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/Our_BBQs.png" alt="Our_BBQs">
+        </div>
+        <div class="art-details">
+          <h2>our BBQs</h2>
+          <p>I had the privilege of living in beautiful Luzern, Switzerland for 5 years. One of the things I’ve missed most about living there are the epic BBQs I had at my Aussie friend's lovely garden. So many great conversations, delicious food, beautiful mountain views and most importantly - amazing, expertly curated tea 👌✨</p>
+        </div>
+      </div>
+
+      <!-- Art Item 4 -->
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/thankyou_bouquet_card.jpg" alt="thankyou_bouquet_card">
+        </div>
+        <div class="art-details">
+          <h2>thank you</h2>
+          <p>Just before my 27th birthday, I was diagnosed with a rare cancer. In the months of confusion, "why-me," lots of tears, treatments that followed, I was also overwhelmed by all the love and support I received from friends in Switzerland and the US. This was a sketch of the flower bouquets that my university friends sent me while I was recovering from my surgery. I turned this into a thank you card and handwrote notes to everyone who had supported me during that time. Roses, bellflowers ,and my mom's favorite, peonies. I was so grateful! 🥰 </p>
+        </div>
+      </div>
+
+
+      <!-- Art Item 3 -->
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/AllThatRises_salmonmauve.png" alt="allthatrisees">
+        </div>
+        <div class="art-details">
+          <h2>all that arises</h2>
+          <p>
+            Ash Wednesday is one of the most special days of the year for me. Unfortunately that year, I couldn't be there in person, but usually during the service, a pastor/priest uses ash to mark a cross on each person’s forehead, and says: “For dust you are, and to dust shall return.”
+            <br>
+            <br>
+            I see it as a crucial reminder that life is short and we are invited to live it fully and meaningfully. It helps me reflect on what’s most important, and also that trials in my life will fade with time.
+            <br>
+            <br>
+            I’ve been experiencing a lot of restlessness and frustration recently (even over small things), so I’ve started reading more books on mindfulness and awareness to help re-center myself. It’s mind-blowing how even a few deep breaths can completely shift my mindset and bring clarity.
+            <br>
+            <br>
+            On a tangential note, I started designing this image because I wanted a new graphic tee to replace my favorite one, which is fading from how often I wear it. I know this graphic might look strange… but I imagined what a graphic tee would look like if it captured all the things that have been on my mind recently. And I guess this is the result🤷🏻‍♀️
+            <br>
+            <br>
+            The clouds remind me to slow down and breathe deeply more often. The heart + lungs -- to view life with clear eyes, make time to listen to others, and be grateful for the gifts life has provided. And the skeleton hand on right -- to reflect and try to let go of things that don’t really matter in the long run. “All that arises, passes away” is a Buddhist teaching, which not only applies to the fact that our lives are short, but also that everything in life, the good and the bad, will pass on, so let’s treasure the good and stay resilient through the tough times💪
+.
+
+
+
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Art Item 3 -->
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/Buttbuddies_noise_binoculars.png" alt="Buttbuddies">
+        </div>
+        <div class="art-details">
+          <h2>thanks for the noise!</h2>
+          <p>A Christmas present to one of my dear friend groups - I wanted to capture the fun, silly moments and inside jokes we’ve shared over the past year! The past few wintery months had been dark at times and I was soo grateful I could still laugh so hard! 
+          <br>
+          <br>
+          Origin story of the phrase: we were having dinner at Sentosa in Zürich, laughing and catching up, and at the end of the meal, as we opened the door to leave, 2 very-serious-looking men who were seated near us said in a sarcastic and annoyed voice, “Thanks for the noise.” This made us pause and look at each other, and then laugh even louder as we closed the door behind us 🤸‍♀️</p>
+        </div>
+      </div>
+
+
+
+      <!-- Art Item 3 -->
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/dreamy_voyage_mediumbutsofter.jpg" alt="Dreamy_Voyage_medium_best">
+        </div>
+        <div class="art-details">
+          <h2>dreamy voyage</h2>
+          <p>This was a season of big change. Not just for me, but for many of my friends and family too. Loved ones moving across the country and the world, starting a job after being out of the workforce for 25 years (my mom!), falling in love, getting engaged and married, becoming a parent, quitting their PhD, rediscovering their identity, letting go of how they thought their life would go, getting a cancer diagnosis, grieving a loss, going through a breakup… Life is one wild ride.
+          <br>
+           <br>
+          This image came up for me when I thought about all the people I care about, the big changes we‘re going through, and the Big Unknown ahead of each of us. For everyone reading this, I’m wishing you all that’s wonderful and beautiful in this world 💗 Our best days are yet to come ✨</p>
+        </div>
+      </div>
+
+
+
+      <!-- Art Item 3 -->
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/LNY_tiger_cropped.jpg" alt="LNY_tiger_cropped">
+        </div>
+        <div class="art-details">
+          <h2>lny 2022</h2>
+          <p>Something I drew for the year of the Tiger.
+            <br>
+            <br>That year, I wanted to focus on mindfulness, resilience, and joy. Also it was the year of the tiger, my mom’s zodiac symbol! 🐅
+            <br>
+            <br>
+
+            Mindfulness - my mom gave me this jade green teapot when I moved to Switzerland. I love its beautiful curves and calming color. It broke when we were moving it into our new apartment, but that’s okay. A bit of superglue and it has a second life on our bookshelf now.
+            <br>
+            <br>
+            Resilience - in my mom’s garden, these fragrant ‘winter sweet’ flowers bloom during the winter despite the snow & cold temperatures. They look so delicate, yet are quite resilient. Once the flowers bloom, my mom gives them away to folks who visit.
+            <br>
+            <br>
+
+            Joy - I’m pleasantly surprised that I can get persimmons in Switzerland! Nostalgic fruit of my childhood. Usually when they arrive, I have to wait a couple weeks before they’re soft and sweet. I guess it’s a good lesson in patience.</p>
+        </div>
+      </div>
+
+
+
+      <!-- Art Item 3 -->
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/valentines_fart_card.png" alt="vday-fart">
+        </div>
+        <div class="art-details">
+          <h2>Candid valentine’s cards</h2>
+          <p>This was part of a series of candid valentine's day cards. Just keeping it real 🤷🏻‍♀️ Er, I mean, we girls actually fart butterflies🦋✨so what am I talking about 🤫</p>
+        </div>
+      </div>
+
+      <!-- Art Item 3 -->
+      <!--
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/art2.png" alt="Art Title 2">
+        </div>
+        <div class="art-details">
+          <h2>Art Title 2</h2>
+          <p>This is a short description for art piece 2. It provides insight into the techniques and inspiration behind the work.</p>
+        </div>
+      </div>
+
+
+      <!-- Art Item 3 -->
+      <!--
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/art2.png" alt="Art Title 2">
+        </div>
+        <div class="art-details">
+          <h2>Art Title 2</h2>
+          <p>This is a short description for art piece 2. It provides insight into the techniques and inspiration behind the work.</p>
+        </div>
+      </div>
+
+
+      <!-- Art Item 3 -->
+      <!--
+      <div class="art-item">
+        <div class="art-photo">
+          <img src="images/art2.png" alt="Art Title 2">
+        </div>
+        <div class="art-details">
+          <h2>Art Title 2</h2>
+          <p>This is a short description for art piece 2. It provides insight into the techniques and inspiration behind the work.</p>
+        </div>
+      </div>
+      -->
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rebecca Zhang</p>
+  </footer>
+</body>
+</html>
