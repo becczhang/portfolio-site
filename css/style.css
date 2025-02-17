@@ -1,0 +1,241 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+/* border-bottom: 1px solid #ddd;  <-- For now, remove the horizontal line */
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* old code: */ 
+/*.header-container {
+  display: flex;
+  align-items: flex-start;  /* Align items at the top */
+/*  justify-content: space-between;
+  flex-wrap: wrap;
+}*/
+
+
+/* Site Title (Top Left) */
+.site-title a {
+  font-family: 'Raleway', sans-serif;  /* Assuming you've added this Google Font */
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  line-height: 1;  /* Adjust line-height if needed */
+  flex: 0 0 auto;
+}
+
+/* Navigation (Center) */
+nav ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* Adjust spacing between links as needed */
+  margin-top: 0; /* Ensures the nav starts at the top */
+}
+
+/* Navigation Link Style */
+nav ul.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+nav ul.nav-links li a:hover {
+  color: #666;
+}
+
+/* Social Links (Top Right) */
+/*.social-links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}*/
+
+/* Social Links (Right) */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1px; /* Adjust this value for closer or further spacing */
+}
+
+.social-links a:hover {
+  color: #666;
+}
+
+.social-links a {
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.social-links img {
+  width: 24px;  /* Adjust size as needed */
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* Hamburger Menu - Hidden on Larger Screens */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin-bottom: 4px;
+  border-radius: 2px;
+}
+
+/* Main Content Styles */
+main {
+  padding: 250px 20px 20px; /* Top padding accounts for fixed header */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Portfolio Links Section */
+.portfolio-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  position: relative;
+  flex: 1 1 calc(33.333% - 20px);
+  margin-bottom: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  display: block;
+}
+
+/*OLD SQUARE STYLE */
+/* Overlay on Images (Hover Effect) */
+/*
+.portfolio-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+} */
+
+/* Overlay on Images (Hover Effect) - NEW CIRCLE STYLE*/
+.portfolio-item .overlay {
+  position: absolute;
+  width: 330px;              /* Set a fixed width */
+  height: 330px;             /* Set a fixed height (to keep it a square) */
+  top: 50%;                 /* Center vertically */
+  left: 50%;                /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the circle exactly */
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;       /* Make the shape circular */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;             /* Initially hidden */
+  transition: opacity 0.3s ease;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust navigation for mobile */
+  nav ul.nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  
+  nav ul.nav-links.active {
+    display: flex;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  /* Portfolio section: stack items vertically */
+  .portfolio-links {
+    flex-direction: column;
+  }
+  
+  .portfolio-item {
+    flex: 1 1 100%;
+  }
+}
