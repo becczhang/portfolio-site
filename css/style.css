@@ -174,15 +174,27 @@ main {
   
   .portfolio-item {
     flex: 1 1 100%;
+    margin-bottom: 20px;
   }
   
-  /* Make circular images and overlays responsive */
-  .circle-image,
+  /* Make circular images responsive */
+  .circle-image {
+    width: 90%;            /* Use 90% of the container width */
+    max-width: 300px;      /* Optional: cap the width */
+    aspect-ratio: 1 / 1;    /* Maintain a 1:1 aspect ratio */
+    margin: 0 auto;        /* Center horizontally */
+    position: relative;
+    transform: none;       /* Remove the fixed centering transform */
+  }
+
+  /* Make the overlay match the responsive circular image */
   .portfolio-item .overlay {
-    width: 80%;           /* Use 80% of the container's width */
-    height: auto;         /* Let the height adjust */
-    aspect-ratio: 1 / 1;   /* Force a square (supported in modern browsers) */
-    margin: 0 auto;       /* Center the element horizontally */
+    width: 90%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -194,13 +206,14 @@ main {
 
 /* Container styles to force a square and crop the image */
 .circle-image {
-  top: 50%;                 /* Center vertically */
-  left: 50%;                /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center the circle exactly */
+  /*top: 50%;                 /* Center vertically */
+  /*left: 50%;                /* Center horizontally */
+  /*transform: translate(-50%, -50%); /* Center the circle exactly */
   width: 330px;         /* Adjust width as needed */
   height: 330px;        /* Keep height equal to width */
   overflow: hidden;     /* Hide any overflow from the image */
   border-radius: 50%;   /* Make the container circular */
+  margin: 0 auto;       /* Center the container */
   /*border: 5px solid #000; /* Add a 3px black border */ 
 }
 
@@ -280,12 +293,36 @@ footer {
     display: flex;
   }
   
-  /* Portfolio section: stack items vertically */
+  /* Portfolio section: Ensure the portfolio links stack and are centered */
+ */
   .portfolio-links {
     flex-direction: column;
+    align-items: center;
   }
   
   .portfolio-item {
     flex: 1 1 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Make circular images and overlays responsive */
+  .circle-image,
+  .portfolio-item .overlay {
+    width: 90%;           /* Use 90% of the container's width */
+    max-width: 300px;     /* Optional: cap the width */
+    aspect-ratio: 1 / 1;   /* Maintain a square shape */
+    margin: 0 auto;       /* Center horizontally */
+  }
+  
+  /* Adjust overlay positioning if needed */
+  .portfolio-item .overlay {
+    /*transform: none;      /* Remove transform if it's not needed */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
