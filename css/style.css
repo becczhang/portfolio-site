@@ -69,6 +69,11 @@ h2[id] {
   /* Added this so that the #magical-moments section is completely visible to my website visitor. Otherwise, it was partially hidden by the website header. */
 }
 
+img[id] {
+  scroll-margin-top: 270px; /* Adjust to match your header height */
+  /* Added this so that the #magical-moments section is completely visible to my website visitor. Otherwise, it was partially hidden by the website header. */
+}
+
 
 /* Navigation (Center) */
 nav ul.nav-links {
