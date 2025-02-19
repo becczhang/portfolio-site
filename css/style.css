@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
@@ -59,6 +63,12 @@ header {
   color: #666;       /* A softer color than the main title */
   margin-top: 15px;   /* Space between title and subtitle */
 }
+
+h2[id] {
+  scroll-margin-top: 235px; /* Adjust to match your header height */
+  /* Added this so that the #magical-moments section is completely visible to my website visitor. Otherwise, it was partially hidden by the website header. */
+}
+
 
 /* Navigation (Center) */
 nav ul.nav-links {
@@ -189,7 +199,7 @@ main {
   .portfolio-item {
     flex: 1 1 100%;
     margin-bottom: 20px;
-    width: 100%;
+    width: 90%;
     max-width: 300px;
     position: relative;
   }
@@ -338,7 +348,7 @@ footer {
   /* Make circular images and overlays responsive */
   .circle-image,
   .portfolio-item .overlay {
-    width: 90%;           /* Use 90% of the container's width */
+    width: 100%;           /* Use 90% of the container's width */
     max-width: 300px;     /* Optional: cap the width */
     aspect-ratio: 1 / 1;   /* Maintain a square shape */
     margin: 0 auto;       /* Center horizontally */
